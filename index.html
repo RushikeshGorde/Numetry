@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
+                    class="fas fa-user-secret me-2"></i>Admin</div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-project-diagram me-2"></i>Institute</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i>Profile</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-paperclip me-2"></i>Setting</a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                        class="fas fa-power-off me-2"></i>Logout</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0">Dashboard</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user me-2"></i>John Doe
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="col-md-4">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">45.8K</h3>
+                                <p class="fs-5">View</p>
+                            </div>
+                            <i class="bi bi-eye text-light fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">150</h3>
+                                <p class="fs-5">Likes</p>
+                            </div>
+                            <i
+                                class="bi bi-hand-thumbs-up-fill text-light fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">320</h3>
+                                <p class="fs-5">Comment</p>
+                            </div>
+                            <i
+                                class="bi bi-chat-left text-light fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="bot h4 pb-2 mb-4 text-dark border-bottom border-dark">
+
+                        <h1 class="text-center">BRANCH : SHAHEEN JUNIOR COLLAGE</h1>
+                    </div>
+                    <div class="container-fluid shadow-lg">
+                        <h3 class="text-primary h4 pb-2 mb-4 border-bottom border-dark">
+                            Staff Details
+                        </h3>
+
+                        <div class="container-fluid">
+                            <form action="">
+
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Employee Status:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Temprary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="inputState" class="form-label text-primary">Staff Type:</label> <br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Teaching</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Non-Teaching</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"> Transport</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Staff
+                                            Department:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Select Temparary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Employement
+                                            Category:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Select Temparary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Designation:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Temprary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Qualification
+                                            Type:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Select Temparary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Education
+                                            Qualification::</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Select Temparary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="inputState" class="form-label text-primary">Access Level:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Select Temparary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-3">
+                                        <label for="inputState" class="form-label text-primary">Employee Status:</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Temprary</option>
+                                            <option>...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="inputState" class="form-label text-primary">CTET Qualified:</label>
+                                        <br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                        </div>
+                        <h3 class="text-primary mt-5 h4 pb-2 mb-4 border-bottom border-dark">
+                            Personal Details
+                        </h3>
+
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Frist Name: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Midle Name: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Last Name: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Mobile No: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Emergency Contact
+                                        No: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="inputState" class="form-label text-primary">Gender:</label> <br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Femail</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Other</label>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Date of Brith:
+                                    </label>
+                                    <input type="date" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary"> Email Id: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Frist Name: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Midle Name: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Last Name: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Mobile No: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Permanent Address:
+                                    </label>
+                                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea"></label>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Corresponding
+                                        Address: </label>
+                                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea"></label>
+                                </div>
+
+                                <div class="col-sm">
+                                    <label for="inputState" class="form-label text-primary">Religion:</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Hindu</option>
+                                        <option>...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <h3 class="text-primary mt-3 h4 pb-2 mb-4 border-bottom border-dark">
+                            Other Details
+                        </h3>
+                        <div class="container-fluid">
+
+                           
+                            <div class="row mt-4">
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary"> Adhar
+                                        No: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Pan
+                                        No: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                               
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Date of Joining:
+                                    </label>
+                                    <input type="date" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1" class="form-label text-primary"> Stafe Refference Code: </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                            </div>
+                           
+                            <div class="row mt-4 mb-3">
+                                <div class="col-sm-3">
+                                    <label for="inputState" class="form-label text-primary">Salary Pay Type:</label> <br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Consolidate</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Pays</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Other</label>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="exampleInputEmail1" class="form-label text-primary">Government id:</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                               
+
+                                <div class="col-sm-2">
+                                    <label for="inputState" class="form-label text-primary">Religion:</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Hindu</option>
+                                        <option>...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>
