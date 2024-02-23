@@ -1,0 +1,29 @@
+* {
+    
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+   }
+   h1 {
+        font-family: 'Nabla', system-ui;
+   }
+   h2,h3, h4, h5 {
+        font-family: 'Satisfy', cursive;
+   }
+   .navbar-toggler {
+        color: aliceblue;
+   }
+.homepage {
+   /* height: 500px; */
+   padding-bottom:10px ;
+}
+
+.CardImg {
+        height: 203px;
+        width: 132px;
+}
+
+.NewBookImg {
+        height: 200px;
+        width: 150px;
+}
